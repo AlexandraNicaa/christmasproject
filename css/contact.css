@@ -1,0 +1,84 @@
+.welcome {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    font-size: inherit;
+    resize: vertical;
+    min-height: 2rem;
+    max-height: 6rem;
+}
+
+section {
+    background-color: #eaeaea;
+}
+/* CONTACT CONTAINER */
+
+/* D-FLEX IN BOOTSTRAP */
+/* .contact .contact-wrapper {
+    display: flex;  
+} */
+
+.contact .contact-wrapper {
+    flex-direction: row;
+    gap: var(--spacing-large);
+}
+.contact .description,
+.contact a,
+.contact input::placeholder {
+    color: #8e8e8e;
+}
+
+/* CONTACT INFO */
+
+.contact ul,
+.contact form {
+    flex-basis: 50%;
+    flex-direction: column;
+    /* padding- adaugat cu bootrstap py-3  */
+}
+
+.contact li {
+    display: flex; 
+    justify-content: space-between;
+    padding: var(--spacing-small) 0;
+    border-bottom: 1px solid var(--dark-green);
+}
+/* FORM*/
+.contact input,
+.contact textarea {
+border: 1px solid var(--dark-green);
+border-radius: 0.40rem;
+
+margin-bottom: var(--spacing-medium);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+border-color:  #8e8e8e
+/* outline: none; */
+}
+
+.contact input[type="submit"] {
+background-color: rgb(93, 161, 93);
+color: white;
+border: none; 
+width: 100px; /* ii dam lungime fixa */
+}
+
+.contact input[type="submit"]:hover {
+    background-color: rgb(7, 190, 157);
+    }
+/* MEDIA QUERIES */
+
+@media (max-width:768px) {
+    .contact .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+footer {
+    color: white;
+}
