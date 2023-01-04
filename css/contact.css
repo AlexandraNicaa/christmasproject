@@ -21,6 +21,15 @@ section {
     display: flex;  
 } */
 
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+
+    padding: var(--spacing-medium);
+    margin: 0 auto;
+}
+
 .contact .contact-wrapper {
     flex-direction: row;
     gap: var(--spacing-large);
